@@ -19,7 +19,7 @@ const EditBook = () => {
     setLoading(true)
     axios.get(`https://mern-book-store-r244.onrender.com/books/${id}`)
     .then((response) => {
-      console.log(response)
+      // console.log(response)
       setAuthor(response.data.book.author)
       setTitle(response.data.book.title)
       setPublishYear(response.data.book.publishYear)

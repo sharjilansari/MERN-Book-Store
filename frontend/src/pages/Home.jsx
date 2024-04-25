@@ -7,6 +7,7 @@ import { BsInfoCircle } from "react-icons/bs";
 import { MdOutlineAddBox, MdOutlineDelete } from "react-icons/md";
 import BooksTable from "../components/home/BooksTable";
 import BooksCard from "../components/home/BooksCard";
+import SearchBox from "../components/SearchBox";
 
 const Home = () => {
   const [books, setBooks] = useState([]);
@@ -41,6 +42,7 @@ const Home = () => {
           Card
         </button>
       </div>
+      <SearchBox />
       <div className="flex justify-between items-center">
         <h1 className="text-3xl my-8">Books List</h1>
         <Link to="/books/create">
